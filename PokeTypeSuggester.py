@@ -43,6 +43,8 @@ print("When you're done, type 'done' and press Enter.")
 while doneEnteringInput == False and numberOfTries < 100:
   userInput = getInput(listOfTypes + listOfTypesLowercase + ['done', 'Done'])
 
+  # Need to check that there aren't duplicates
+
   if userInput in listOfTypes + listOfTypesLowercase:
       print(userInput.title())
       userTypes.insert(1, userInput.title())
